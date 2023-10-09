@@ -2,10 +2,10 @@ const BitcoinCore = require('bitcoin-core');
 
 // Параметры подключения к Bitcoin Core JSON RPC
 const bitcoinRpcConfig = {
-    username: 'bitcoinuserliq',
-    password: 'bitcoinsomepassliq',
-    port: 18333, // Порт JSON RPC Bitcoin Core
-    host: '127.0.0.1', // IP-адрес или хост, где запущен Bitcoin Core
+    username: '',
+    password: '',
+    port: , // Порт JSON RPC Bitcoin Core
+    host: '', // IP-адрес или хост, где запущен Bitcoin Core
     network: 'testnet', // testnet
 };
 //tb1qxk8reydle9mdtk0jh5u3yqd95vyrln8tumwhu4 получатель
@@ -14,7 +14,7 @@ const bitcoinRpcConfig = {
 const client = new BitcoinCore(bitcoinRpcConfig);
 
 // Адрес для которого вы хотим получить UTXO
-const targetAddress = 'tb1qu5r82kfelzhxwfc20hg2ram6jvplxxnctcsac8';
+const targetAddress = '';
 
 // Функция для расчета суммы UTXO
 async function calculateUTXOSum() {
