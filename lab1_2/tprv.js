@@ -3,7 +3,7 @@ const bip32 = require('bip32')
 const TESTNET = bitcoin.networks.testnet
 // Get WIF from mainnet extended private key exported from recent Copay (sender)
 const t =
-    bip32.fromBase58('xprv9s21ZrQH143K49asmNLpQPBx9itdFVi2anavcLrLNNj6tzk9CauBRMfR5yvdFf5ZNTMiDMHUeXqoKtTeViijL93j6zJTco8EWzfoUhs8A1K');
+    bip32.fromBase58('');
 t.network = TESTNET; // trick to transform mainnet key pair to testnet
 // BIP44 (Hierarchical Deterministic Wallet) path, bitcoin testnet, account 0, external address
 // See https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki
@@ -20,7 +20,7 @@ console.log(address); // Check that address is correctly derrived and correspond
 var tx = new bitcoin.TransactionBuilder(TESTNET);
 // Add the input (who is paying):
 // [previous transaction hash, index of the output to use]
-var txId = 'de7353d4ea86a4a14108ca479160067720b3ae0caef0da40e97f978f3184624c'
+var txId = ''
 tx.addInput(txId, 0);
 // Add the output (who to pay to):
 // [payee's address, amount in satoshis, 1 bitcoin = 100 000 000 satoshis]
