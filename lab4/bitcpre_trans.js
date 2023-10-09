@@ -1,11 +1,11 @@
 const request = require('request-promise-native');
-const rpcUser = 'bitcoinuserliq';
-const rpcPassword = 'bitcoinsomepassliq';
-const rpcUrl = 'http://127.0.0.1:18333';
+const rpcUser = '';
+const rpcPassword = '';
+const rpcUrl = '';
 async function createRawTransaction() {
     const inputs = [
         {
-            txid: '7f4b4f19b72e7410c0026f2c61ce174d841e3e3b75bcc12a09f55b91767d97d7',
+            txid: '',
             vout: 0,
         },
     ];
