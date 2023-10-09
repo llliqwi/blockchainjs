@@ -1,7 +1,7 @@
 const bitcoin = require('bitcoinjs-lib');
 const bip39 = require('bip39');
 // Фраза из 12 слов
-const mnemonic = 'screen broom calm cabbage audit midnight dentist food antique settle rabbit focus';
+const mnemonic = '';
 // Определите сеть (testnet)
 const network = bitcoin.networks.testnet;
 // Создайте seed из мнемонической фразы
