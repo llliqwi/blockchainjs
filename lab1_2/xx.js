@@ -4,7 +4,7 @@ const bip39 = require('bip39');
 const TESTNET = bitcoin.networks.testnet;
 
 // Задайте вашу мнемоническую фразу
-const mnemonic = 'mammal jaguar garbage winner foster pond brown hamster latin toy sort blossom'; // Замените на вашу мнемоническую фразу
+const mnemonic = ''; // Замените на вашу мнемоническую фразу
 
 // Определите пароль (если необходимо)
 const password = ''; // Оставьте пустым, если пароль не используется
